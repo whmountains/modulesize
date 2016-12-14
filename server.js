@@ -8,7 +8,7 @@ const app = express()
 app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  res.send('Go to https://modulesize-sipydsuyrx.now.sh/PKGNAME to see how big it will be when minified and bundled in the browser.')
+  res.send('Go to ./PKGNAME to see how big it will be when minified and bundled in the browser.')
 })
 
 app.get('/:pkg', (req, res) => {
